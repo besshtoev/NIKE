@@ -2,6 +2,23 @@
     .nav__links {
         gap: 32px;
     }
+    .header__elements{
+        flex-direction: column-reverse;
+       
+        align-items: center;
+    }
+    .header__photo{
+        max-width: 600px;
+    }
+    .header__info{
+        text-align: center;
+    }
+    .header__text{
+        justify-content: center;
+    }
+    header{
+        padding-bottom: 60px;
+    }
 }
 
 @media (max-width:768px) {
@@ -51,4 +68,15 @@
         display: block;
     }
     
+}
+@media (max-width:575px) {
+    .header__info h1{
+        font-size: 10vw;
+    }
+    .header__text p , .header__text span{
+        font-size: 24px;
+    }
+    .header__info{
+        min-width: 100%;
+    }
 }

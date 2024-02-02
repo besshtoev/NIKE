@@ -1,3 +1,10 @@
+@media (max-width:1060px){
+    .about-us__photo{
+        width:45vw ;
+        height: 45vw;
+
+    }
+}
 @media (max-width:992px) {
     .nav__links {
         gap: 32px;
@@ -18,6 +25,37 @@
     }
     header{
         padding-bottom: 60px;
+    }
+    .about-us__elements{
+        flex-direction: column-reverse;
+
+    }
+    .about-us__photo_one{
+        display: none;
+    }
+    .about-us__photo_two{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .about-us__info{
+        text-align: center;
+    }
+    .benefit-block__info{
+        text-align: left;
+
+    }
+    .about-us__info >p{
+        margin-bottom: 80px;
+    }
+    .about-us__photo{
+        width: 60vw;
+        height: 60vw;
+        margin: 0 auto 20px ;
+    }
+    .benefit-block{
+        width: 60vw;
+        margin: auto;
+        max-width: 100%;
     }
 }
 
@@ -66,6 +104,17 @@
 
     .nav__hamburger{
         display: block;
+    }
+    .about-us__photo{
+        width: calc(100vw - 40px);
+        height: calc(100vw - 40px);
+        max-width: 500px;
+        max-height: 500px;
+       
+    }
+    .benefit-block {
+        width: 100%;
+        max-width: 500px;
     }
     
 }

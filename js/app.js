@@ -30,7 +30,7 @@ for (let i = 0; i < LinkAll.length; i++) [
 
 const ButtonAll = document.querySelectorAll('.nav__button button');
 
-for (let i = 0; 1 < ButtonAll.length; i++) [
+for (let i = 0; i < ButtonAll.length; i++) [
     ButtonAll[i].onclick = function () {
         NavLogo.classList.remove('nav__logo_active');
         NavButtons.classList.remove('nav__button_active');

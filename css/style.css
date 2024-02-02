@@ -3,12 +3,16 @@
     box-sizing: border-box;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .light-theme {
     --color1: #FEFFF6;
     --color2: #313131;
     --color3: #848D3D;
     --color4: #5C5C5C;
+    --color5: #E0E3CA;
     --colorShadow: rgba(132, 141, 61, 0.30);
 }
 
@@ -24,6 +28,9 @@ h4,
 h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
+}
+section{
+    overflow: hidden;
 }
 
 .container {
@@ -189,6 +196,7 @@ header {
     padding-top: 120px;
     z-index: 1;
     position: relative;
+    padding-bottom: 130px;
 }
 
 .header__elements {
@@ -204,7 +212,8 @@ header {
     margin-bottom: 32px;
     color: var(--color2);
 }
-.header__info{
+
+.header__info {
     min-width: 541px;
 }
 
@@ -290,7 +299,7 @@ h1 span {
 }
 
 .grade span {
-    
+
     transform: translateY(4px);
     color: var(--color4);
     font-size: 24px;
@@ -320,10 +329,102 @@ h1 span {
     font-size: 24px;
     font-weight: 300;
 }
+
 .header__photo img {
     width: 100%;
+    
 }
-.header__photo{
-    width: 100%;
 
+.header__photo {
+    width: 100%;
+    max-width: 572px;
+
+}
+
+.about-us {
+    padding: 80px 0;
+}
+
+.about-us__elements {
+    display: flex;
+    align-items: center;
+    gap: 69px;
+}
+
+.about-us__photo {
+    width: 520px;
+    height: 520px;
+    border-radius: 20px;
+    background-color: var(--color5);
+    flex-shrink: 0;
+    position: relative;
+}
+
+.about-us__photo img {
+    position: absolute;
+    width: 140%;
+    top: -17%;
+    left: -17%;
+
+}
+
+.about-us__info h2 {
+    color: var(--color2);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.green_text {
+    color: var(--color3);
+}
+
+.about-us__info p {
+    color: var(--color4);
+    max-width: 580px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 44px;
+}
+
+.benefit-block {
+    display: flex;
+    gap: 20px;
+    max-width: 480px;
+}
+
+.benefit-block__icon {
+    background-color: var(--color5);
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-block__icon i {
+    font-size: 40px;
+    color: var(--color3);
+}
+
+.benefit-block__info h3 {
+    color: var(--color2);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 3px;
+}
+
+.benefit-block__info p {
+    color: var(--color4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about-us__photo_two{
+    display: none;
 }
